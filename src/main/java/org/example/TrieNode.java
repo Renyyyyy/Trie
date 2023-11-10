@@ -1,13 +1,11 @@
 package org.example;
 
-import java.util.HashMap;
-
 public class TrieNode {
-    HashMap<Character, TrieNode> children;
+    SimpleHashMap<Character, TrieNode> children;
     boolean isEndOfWord;
 
     public TrieNode() {
-        children = new HashMap<>();
+        children = new SimpleHashMap<>();
         isEndOfWord = false;
     }
 }
